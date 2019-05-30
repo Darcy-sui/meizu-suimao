@@ -1,0 +1,195 @@
+@charset "utf-8";
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden;
+}
+#banner {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1240px;
+  z-index: 100;
+  overflow-y: hidden;
+}
+.section-box-public {
+  background: #f4f4f4;
+  overflow: hidden;
+}
+.section-box {
+  margin-top: 597px;
+  height: auto;
+  padding-bottom: 45px;
+}
+.section-box .section-box-adv {
+  height: auto;
+  padding-bottom: 45px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.section-box .section-box-adv > ul {
+  width: 1240px;
+  margin: 0 auto;
+}
+.section-box .section-box-adv > ul li {
+  float: left;
+  position: relative;
+  width: 25%;
+  padding-top: 45px;
+}
+.section-box .section-box-adv > ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.section-box .section-box-adv > ul li a img {
+  display: block;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+}
+.section-box .section-box-adv > ul li a em {
+  display: block;
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+.section-box .section-box-adv > ul li a p {
+  font-size: 14px;
+  color: #999;
+}
+.index-phone {
+  min-width: 1240px;
+}
+.index-phone .index-phone-center {
+  margin-bottom: 50px;
+}
+.index-phone .index-phone-center .index-phone-title {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.index-phone .index-phone-center .index-phone-img {
+  height: 450px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+.index-phone .index-phone-center .index-phone-img a {
+  transition: opacity .2 linear;
+}
+.index-phone .index-phone-center .index-phone-img a:hover {
+  opacity: .8;
+}
+.index-phone .index-phone-center .index-phone-img a img {
+  width: 100%;
+  height: 100%;
+}
+.index-phone .index-phone-center .box-info {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.index-phone .index-phone-center #big {
+  width: 610px;
+  height: 610px;
+}
+.index-phone .index-phone-center #big img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 460px;
+  margin-left: -250px;
+}
+.index-phone .index-phone-center #big .good-box {
+  top: 50px;
+}
+.index-phone .index-phone-center #big .good-box > span {
+  display: block;
+}
+.index-phone .index-phone-center #big .good-box .good-name {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+.index-phone .index-phone-center #big .good-box .good-title {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+.index-phone .index-phone-center #big .good-box .good-price {
+  position: relative;
+  display: inline-block;
+  color: #c00;
+  font-size: 22px;
+  padding-left: 14px;
+}
+.index-phone .index-phone-center #big em {
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  background-image: linear-gradient(120deg, #ff3149, #ff64a6);
+}
+.index-phone .index-phone-center .section-box-row .section-box-center {
+  width: 1240px;
+  margin: auto;
+}
+.index-phone .index-phone-center .section-box-row .section-box-center ul > li {
+  float: left;
+  position: relative;
+  width: 301px;
+  height: 375px;
+  margin-right: 9px;
+  margin-top: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.index-phone .index-phone-center .section-box-row .section-box-center ul > li > a img {
+  display: block;
+  margin: 0 auto;
+  height: 230px;
+  margin-top: 30px;
+}
+.index-phone .index-phone-center .section-box-row .section-box-center ul > li > a em {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 30px;
+  left: 56px;
+  background-image: linear-gradient(120deg, #2e74f6, #56bdf9);
+  line-height: 60px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 50%;
+}
+.index-phone .index-phone-center .section-box-row .section-box-center ul > li > a span {
+  display: block;
+}
+.index-phone .index-phone-center .section-box-row .section-box-center ul > li > a .top {
+  top: 270px;
+}
+.index-phone .index-phone-center .section-box-row .section-box-center ul > li > a .goods-name {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.index-phone .index-phone-center .section-box-row .section-box-center ul > li > a .goods-title {
+  color: #999;
+  font-size: 14px;
+}
+.index-phone .index-phone-center .section-box-row .section-box-center ul > li > a .goods-price {
+  display: inline-block;
+  color: #c00;
+  font-size: 22px;
+}

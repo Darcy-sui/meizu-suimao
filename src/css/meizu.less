@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+// 导航--子导航 
+.jacket .nav {
+    position: relative;
+    z-index: 9999;
+
+    // 主导航
+    .main-nav {
+        font-size: 14px;
+        position: relative;
+    }
+
+}
+
+// 版心
+.main-nav-center {
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+}
+
+// logo
+.meizu-header-logo {
+    float: left;
+    padding: 28px 0;
+
+    &>a {
+        display: block;
+        width: 125px;
+        height: 24px;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+// 头部购物车图标
+#meizu-header-cart {
+    position: relative;
+    float: right;
+    margin: 27px 0 0 8px;
+    width: 29px;
+    height: 29px;
+    background: url(../img/cart.png) no-repeat;
+    text-align: center;
+    font-size: 12px;
+    text-indent: 3px;
+    line-height: 10px;
+    background-position-y: center;
+
+    // 购物车红色小图标
+    #meizu-header-num {
+        position: absolute;
+        top: -2px;
+        right: -3px;
+        height: 15px;
+        border-radius: 50%;
+        background: #c00;
+        color: #fff;
+        line-height: 15px;
+        text-align: center;
+        display: inline-block;
+        padding: 0 4px;
+        text-indent: 0;
+    }
+}
+
+//购物车二级导航
+.meizu-header-cart-dl {
+    position: absolute;
+    cursor: auto;
+    top: 68px;
+    right: -12px;
+    width: 318px;
+    height: 120px;
+    font-size: 12px;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px rgba(153, 153, 153, .3);
+    border-radius: 3px;
+    z-index: 999;
+    display: none;
+
+    .meizu-header-cart-dl-img {
+        width: 47px;
+        height: 42px;
+        background: url(../img/cart-dl.png);
+        display: inline-block;
+        position: absolute;
+        left: 60px;
+        top: 38px;
+
+    }
+
+    .meizu-header-cart-dl-center {
+        display: inline-block;
+        position: absolute;
+        left: 136px;
+        top: 38px;
+    }
+}
+
+//头部小三角标识
+
+.meizu-header-triangle {
+    width: 0;
+    height: 0;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #ccc transparent;
+    position: absolute;
+}
+
+//三角标识定位
+.triangle {
+    top: -11px;
+    right: 18px;
+}
+
+// 登陆注册
+#meizu-header-user {
+    float: right;
+    padding: 32px 0 0 8px;
+    text-align: right;
+    font-size: 12px;
+    position: relative;
+    z-index: 105;
+
+    #meizu-header-user-img {
+        background-image: url(../img/register.png);
+        background-repeat: no-repeat;
+        position: relative;
+        cursor: pointer;
+        z-index: 3;
+        width: 29px;
+        height: 29px;
+        margin-top: -5px;
+    }
+
+    //登陆注册二级导航
+
+
+    #meizu-header-user-dropdown {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        width: 98px;
+        background-color: #fff;
+        top: 64px;
+        left: 50%;
+        border-radius: 2px;
+        box-sizing: border-box;
+        text-align: center;
+        margin-left: -48px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+
+        &>li {
+            font-size: 12px;
+            display: block;
+            margin: 15px auto;
+
+            &>a {
+                color: #333;
+                position: relative;
+                z-index: 4;
+            }
+        }
+    }
+
+    //鼠标悬浮二级导航出现
+    &:hover .meizu-header-user-dl {
+        display: block;
+    }
+}
+
+
+
+//三角图标定位
+.meizu-header-user-dl {
+    display: none;
+
+    &>.position {
+        left: 16px;
+        top: 54px;
+    }
+}
+
+// 搜索框
+
+.meizu-header-search {
+    border-color: #999;
+    position: relative;
+    float: right;
+    margin: 26px 5px 0 10px;
+    width: 170px;
+    height: 30px;
+    line-height: 29px;
+    font-size: 12px;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+
+    #meizu-header-input {
+        display: block;
+        border: none;
+        padding: 0;
+        outline: 0;
+        width: 127px;
+        height: 20px;
+        margin-left: 15px;
+        margin-top: 5px;
+        -webkit-transition: width .5s;
+        transition: width .5s;
+        font-size: 12px;
+        line-height: 20px;
+        color: #333;
+        background: 0 0;
+        box-sizing: content-box;
+        outline-offset: 0;
+    }
+
+    #meizu-header-input-img {
+        position: absolute;
+        top: 6px;
+        right: 8px;
+        display: block;
+        width: 14px;
+        height: 16px;
+        background-position: center;
+        cursor: pointer;
+    }
+
+}
+
+// 一级导航栏目
+.meizu-header-link {
+    float: right;
+    overflow: hidden;
+    white-space: nowrap;
+
+    &>li {
+        // float: left;
+        display: inline-block;
+    }
+
+    &>li>a {
+        color: #333;
+        display: block;
+        padding: 31px 20px 30px;
+        line-height: 21px;
+        font-size: 14px;
+        transition: color 1s linear;
+    }
+
+    // 鼠标悬浮字体变颜色
+    &>li>a:hover {
+        color: #00b9f2;
+    }
+}
+.active{
+    color: #00b9f2!important;
+}
+
+//APP下载的二级导航
+.app-down-content {
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 82px;
+    background-color: #fff;
+    min-width: 100%;
+    display: none;
+    &>#pic {
+        display: block;
+        position: relative;
+        width: 1240px;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    &>#first {
+
+        position: absolute;
+        left: 534px;
+        bottom: 72px;
+        padding: 0;
+
+        &>img {
+            display: block;
+            width: 124px;
+            height: 30px;
+        }
+
+    }
+
+    &>#second {
+
+        position: absolute;
+        right: 262px;
+        bottom: 72px;
+
+        padding: 0;
+
+        &>img {
+            display: block;
+            width: 124px;
+            height: 30px;
+        }
+
+    }
+
+
+}
+
+
+//手机栏目的二级导航
+.show{
+    display: block!important;
+}
+.background{
+    background-color: #fff;
+}
+.meizu-header-sub {
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    top: 82px;
+    background-color: #fff;
+    min-width: 100%;
+    display: none;
+     &>ul {
+        width: 1240px;
+        margin: 0 auto;
+        font-size: 12px;
+        white-space: nowrap;
+
+        &>li {
+           
+            display: inline-block;
+            text-align: center;
+            padding: 5px 5px 20px;
+            width: 142px;
+            height: 140px;
+            font-size: 12px;
+            color: #333;
+
+        }
+        
+        img {
+            display: block;
+            width: 120px;
+            height: 120px;
+        }
+        a {
+            font-size: 12px;
+            width: 142px;
+            color: #333;
+           
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: block;
+            padding: 0s;
+            cursor: pointer;
+            position: relative;
+            z-index: 99;
+            span {
+                background-color: #fff;
+            }
+
+            em {
+                display: block;
+                color: #333;
+                font-style: normal;
+            }
+        }
+    }
+}
