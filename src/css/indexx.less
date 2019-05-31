@@ -80,19 +80,20 @@
 }
 
 // 商品详情页面
-.index-phone {
+// 魅族手机   魅族声学  智能配件 生活周边 
 
+// 标题
+.index-title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.index-phone {
     min-width: 1240px;
 
     .index-phone-center {
         margin-bottom: 50px;
-
-        // 标题
-        .index-phone-title {
-            font-size: 30px;
-            text-align: center;
-            margin-bottom: 10px;
-        }
 
         // 大图片
         .index-phone-img {
@@ -112,7 +113,6 @@
                     width: 100%;
                     height: 100%;
                 }
-
             }
         }
 
@@ -137,7 +137,6 @@
                 bottom: 0;
                 height: 460px;
                 margin-left: -250px;
-
             }
 
             // 大图商品展示
@@ -146,9 +145,7 @@
 
                 &>span {
                     display: block;
-
                 }
-
 
                 .good-name {
                     color: #333;
@@ -196,13 +193,35 @@
                     transition: all .3s ease;
                     cursor: pointer;
 
+                    &:hover {
+                        box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+                    }
 
                     #pic {
                         display: block;
-                        width: 302px;
-                        height: 374px;
+                        width: 100%;
+                        height: 100%;
                         margin-top: 0;
 
+                    }
+
+                    // 左侧商品列表样式
+                    .goods-name-pic {
+                        color: #fff;
+                        font-size: 21px;
+                        font-weight: 700;
+                        margin-bottom: 0;
+                    }
+
+                    .goods-title-pic {
+                        color: #fff;
+                        font-size: 14px;
+                    }
+
+                    .goods-price-pic {
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #6ad0c4;
                     }
 
                     &>a {
@@ -243,6 +262,8 @@
                             top: 270px;
                         }
 
+                        //公共样式
+
                         .goods-name {
                             color: #333;
                             font-size: 16px;
@@ -266,6 +287,176 @@
             }
         }
 
+    }
+
+}
+
+// 社区热帖
+.index-comment {
+
+    // 展示栏
+    .section-host-row {
+        margin-bottom: 50px;
+
+        .section-host-center {
+            width: 1240px;
+            margin: auto;
+
+            &>ul>li {
+                float: left;
+                position: relative;
+                width: 301px;
+                height: 400px;
+                margin-right: 9px;
+                margin-bottom: 9px;
+                background-color: #fff;
+                overflow: hidden;
+                transition: all .3s ease;
+
+                &:hover {
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+                }
+
+                a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    color: #515151 !important;
+
+                    // 承载照片盒子
+                    .comment-img-wp {
+                        height: 190px;
+                        position: relative;
+                        overflow: hidden;
+
+                        img {
+                            display: block;
+                            margin: 0 auto;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .comment-user-info {
+                        overflow: hidden;
+                        height: 42px;
+                        line-height: 42px;
+                        margin-top: 10px;
+                        padding: 0 15px;
+
+                        img {
+                            width: 36px;
+                            height: 36px;
+                            border: 1px solid #fff;
+                            border-radius: 50%;
+                            float: left;
+
+                        }
+
+                        span {
+                            margin-left: 15px;
+                            text-align: left;
+                            float: left;
+                        }
+
+                    }
+
+                    p {
+                        padding: 10px 15px 15px;
+                        font-size: 16px;
+                        line-height: 27px;
+                        text-align: left;
+                        height: 66px;
+                        overflow: hidden;
+                    }
+
+                    .comment-tip {
+                        color: #999;
+                        display: block;
+                        padding: 0 15px;
+                        margin-top: 36px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//  Flyme列表 精彩视频
+.section-flyme-row {
+    margin-bottom: 50px;
+
+    .section-flyme-center {
+        width: 1240px;
+        margin: auto;
+
+        li {
+            width: 301px;
+            height: 245px;
+            margin-bottom: 15px;
+            float: left;
+            margin-right: 9px;
+            background-color: #fff;
+            overflow: hidden;
+            transition: all .3s ease;
+            position: relative;
+
+            &:hover {
+                box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+            }
+
+            img {
+                height: 190px;
+                overflow: hidden;
+            }
+
+            &>a {
+                color: #515151;
+
+                p {
+                    font-size: 16px;
+                    line-height: 55px;
+                    text-align: center;
+                }
+                // 精彩视频播放图标
+                div>i {
+                    display: block;
+                    z-index: 1000;
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    background: url(../img/icon-video-player_36c4d32.png) no-repeat;
+                    background-size: 100%;
+                    right: 18px;
+                    bottom: 70px;
+                }
+            }
+
+        }
+    }
+}
+// Flyme第一个LI大图
+.first {
+    height: 245px;
+    margin-bottom: 15px;
+    width: 611px !important;
+
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        img {
+            border: 0;
+            display: block;
+            height: 245px !important;
+            margin: 0 auto;
+
+        }
     }
 
 }

@@ -3,7 +3,7 @@ $(function() {
         var index = $('.meizu-header-link>li').index(this);
         $('.meizu-header-sub').eq(index).slideDown()
         $('.header-nav-li>a').hover(function() {
-            console.log(1)
+            // console.log(1)
             $('.nav').addClass('background')
         }, function() {
             $('.nav').removeClass('background')
