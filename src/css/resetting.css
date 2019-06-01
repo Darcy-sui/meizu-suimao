@@ -27,15 +27,18 @@ th,
 td,
 em,
 button {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
 li {
-  list-style: none;
+    list-style: none;
 }
+
 a {
-  text-decoration: none!important;
+    text-decoration: none!important;
 }
+
 h1,
 h2,
 h3,
@@ -53,7 +56,15 @@ strong,
 th,
 figcaption,
 i {
-  font-size: 1em;
-  font-weight: 400;
-  font-style: normal;
+    font-size: 1em;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
 }

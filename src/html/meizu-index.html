@@ -237,12 +237,12 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="../img/banner 3.jpg" alt="..." style="max-width:none">
+                        <img src="../img/new  banner.jpg" alt="..." style="max-width:none">
                         <div class="carousel-caption">
                         </div>
                     </div>
                     <div class="item">
-                        <img src="../img/banner 4.jpg" alt="..." style="max-width:none">
+                        <img src="../img//banner 4.jpg" alt="..." style="max-width:none">
                         <div class="carousel-caption">
                         </div>
                     </div>
@@ -279,13 +279,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="../img/section3.jpg">
+                    <a href="#"><img data-original="../img/section3.jpg" class="lazy">
                         <em>魅族 Note9</em>
                         <p>立即购买</p>
                     </a>
                 </li>
                 <li>
-                    <a href="#"><img src="../img/section4.jpg">
+                    <a href="#"><img data-original="../img/section4.jpg" class="lazy">
                         <em>以旧换新</em>
                         <p>免费寄件 专业检测</p>
                     </a>
@@ -308,7 +308,7 @@
                 <!--详情页面版心  -->
                 <div class="section-box-center">
                     <ul class="clear" id="prolist">
-                        <li id="big">
+                        <!-- <li id="big">
                             <a>
                                 <img src="../img/left 1.jpg">
                                 <span class="box-info good-box">
@@ -335,8 +335,8 @@
                                 </span>
                                 <em>领券</em>
                             </a>
-                        </li>
-                        <li>
+                        </li> -->
+                        <!-- <li>
                             <a>
                                 <img src="../img/left 1.jpg">
                                 <span class="box-info top">
@@ -447,7 +447,7 @@
                                 </span>
                                 <em>领券</em>
                             </a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -1388,13 +1388,14 @@
 
     <script src="../tuupola-jquery_lazyload/jquery.lazyload.min.js"></script>
     <script type="text/javascript" src="../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script>
-        $("img.lazy").lazyload({
-            placeholder: "../img/timg.gif",
-            effect: "fadeIn",
-            threshold: 200,
-        });
-    </script>
+
 </body>
+<script>
+    $("img.lazy").lazyload({
+        placeholder: "../img/timg.gif",
+        effect: "fadeIn",
+        threshold: 200,
+    });
+</script>
 
 </html>
