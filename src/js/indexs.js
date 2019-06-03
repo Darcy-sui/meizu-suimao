@@ -30,7 +30,8 @@ $(function() {
             }
             for (var j = 2; j < 10; j++) {
                 var pic = JSON.parse(response[j].pic);
-                console.log(pic[0].src)
+                console.log(pic[0].src);
+                var id = response[j].id;
                 template = `
                 <li>
                 <a href="../html/detailed.html?id=${id}" target="_blank">

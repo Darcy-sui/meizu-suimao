@@ -1,0 +1,78 @@
+@charset "utf-8";
+form {
+  width: 298px;
+  position: absolute;
+  top: 16%;
+  right: 85px;
+  background-color: #ffffff;
+  padding: 72px 35px 40px;
+  border-radius: 2px;
+}
+form div {
+  border-radius: 2px;
+}
+form .form-title {
+  font-size: 20px;
+  text-align: center;
+  color: #ccc;
+}
+form .form-title a {
+  margin: 0 28px;
+}
+form .form-title a:nth-child(1) {
+  color: #515151;
+}
+form .form-title a:nth-child(2):hover {
+  color: #515151;
+}
+.form-name,
+.form-password {
+  border: 1px solid #ccc;
+  width: auto;
+  display: block;
+  height: 46px;
+  line-height: 46px;
+  color: #00a7ea;
+  margin-top: 30px;
+}
+.form-name input,
+.form-password input {
+  border: 0;
+  height: 45px;
+  width: 296px;
+  font-size: 18px;
+}
+.form-password {
+  margin-bottom: 30px;
+}
+.form-content {
+  font-size: 14px;
+  color: #515151;
+  cursor: pointer;
+}
+.form-content:hover {
+  color: black;
+}
+.form-btn {
+  width: auto;
+  font-size: 14px;
+  text-align: center;
+  height: 46px;
+  line-height: 46px;
+  margin-top: 30px;
+  background-color: #387aff;
+}
+.form-btn:hover {
+  background-color: blue;
+  transition: color 1s linear;
+}
+.form-log {
+  margin-top: 18px;
+}
+.form-log a {
+  color: #387aff;
+}
+.form-log a:hover {
+  color: blue;
+  transition: color 1s linear;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Flyme 账号 - 注册</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <meta name="description" content="欢迎登录和注册 Flyme 账号，您可以体验手机云服务功能，包括：在线下载应用，同步手机数据和查找手机等，让您的手机管理更加智能。">
+    <meta name="keywords" content="魅族 meizu 登录flyme 云服务 查找手机 充值账号 MX M9 MX2">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/resetting.css">
+    <link rel="stylesheet" href="../css/login-public.css">
+    <script src="../tuupola-jquery_lazyload/jquery-1.11.0.min.js"></script>
+    <script src="../js/log.js"></script>
+</head>
+
+<body>
+    <div class="register-content">
+        <div class="register-header">
+            <a href="#">
+                <i></i>
+            </a>
+        </div>
+        <div style="background-color: #f8fcff;">
+            <div class="register-banner">
+                <div class="register-banner-content">
+                    <form action="../lib/reg.php" method="post">
+                        <div class="form-title"><a>注册Flyme账号</a></div>
+                        <div class="form-name">
+
+                            <input type="text" placeholder="请输入用户姓名" name="usersname">
+                            <p style="margin-top:-6px;"></p>
+                        </div>
+                        <div class="form-password">
+
+                            <input type="text" placeholder="请输入用户密码" name="password">
+                            <p style="margin-top:-6px;"></p>
+                        </div>
+                        <div class="form-content"><input type="checkbox"> 注册账号即表示您同意并愿意遵守<i>Flyme服务协议、法律声明 </i>和<i>隐私声明</i></div>
+                        <div class="form-btn"><input type="submit" value="立即注册" style="background:transparent;border:none; color: white;" disabled></div>
+                        <div class="form-log"><a href="../html/Login.html" target="_blank">登录</a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="login-footer">
+        <div class="login-footer-center clear">
+            <ul class="clear">
+                <li>关于魅族</li>
+                <span></span>
+                <li>工作机会</li>
+                <span></span>
+                <li>联系我们</li>
+                <span></span>
+                <li>法律声明</li>
+                <span></span>
+                <li>常见问题</li>
+                <span></span>
+                <li>简体中文</li>
+            </ul>
+            <div class="host-phone">
+                <span>客服热线</span><span>400-788-3333</span><i>在线客服</i>
+            </div>
+            <div class="login-footer-ico">
+                <ol>
+                    <li></li>
+                    <li></li>
+                    <i class="show"><img src="../img/33474117-9a2d-455d-a8ff-997355238400.jpg" ></i>
+                    <li></li>
+                </ol>
+            </div>
+        </div>
+        <div class="login-d">
+            <p>©2019 Meizu Telecom Equipment Co., Ltd. All rights reserved.
+                <em>备案号: 粤ICP备13003602号-4</em><em>经营许可证编号: 粤B2-20130198</em>
+                <em>营业执照</em></p>
+        </div>
+    </div>
+
+    <script>
+        $('.login-footer-ico ol #hover').hover(function() {
+
+            $('.login-footer-ico ol .show').show()
+        }, function() {
+            $('.login-footer-ico ol .show').hide()
+        })
+    </script>
+
+</body>
+
+</html>

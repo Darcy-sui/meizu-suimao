@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+// 头部
+.shopping-header {
+    position: relative;
+    width: 100%;
+    z-index: 998;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #efefef;
+
+    .shopping-header-center {
+        width: 1240px;
+        margin: 0 auto;
+
+        &>div {
+            float: left;
+
+            a {
+                display: block;
+                height: 80px;
+                width: 150px;
+
+                img {
+                    max-width: 125px;
+                    margin-top: 28px;
+                }
+
+            }
+        }
+
+        #first {
+            float: left;
+            margin-left: 30px;
+            line-height: 80px;
+
+            li,
+            i {
+                float: left;
+                font-size: 14px;
+                color: #999;
+            }
+
+            i {
+                margin: 0 10px;
+            }
+
+        }
+
+        #second {
+            float: right;
+            height: 40px;
+            font-size: 12px;
+            line-height: 40px;
+            margin-top: 20px;
+
+            li {
+                float: left;
+                padding: 0 20px;
+
+                &>a {
+                    color: #666;
+                    transition: all .2s linear;
+
+                    &:hover {
+                        color: #00c3f5
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 内容部分
+.shopping-cart {
+    padding-bottom: 40px;
+    overflow: hidden;
+    background-color: #F4F6FA;
+
+    .shopping-cart-center {
+        width: 1240px;
+        margin: 0 auto;
+
+        .shopping-cart-empty {
+            display: table;
+           height:auto;
+            width: 100%;
+            margin: 10px 0 30px;
+            background-color: #fff;
+
+           
+        }
+    }
+}

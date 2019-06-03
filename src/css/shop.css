@@ -1,0 +1,16 @@
+@charset "utf-8";
+.itemlist .item {
+  border: 1px solid#ccc;
+  margin: 20px;
+  overflow: hidden;
+}
+.itemlist .item div {
+  float: left;
+  margin: 30px 16px;
+}
+.itemlist .item .p-img img {
+  width: 100px;
+}
+.itemlist .item .p-title {
+  width: 500px;
+}

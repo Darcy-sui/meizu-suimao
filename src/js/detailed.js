@@ -27,8 +27,7 @@ $(function() {
         dataType: "json",
         success: function(response) {
             var pic = JSON.parse(response.pic);
-            var template = `'
-           
+            var template = `
             <div class="fast-nav">
                 <div class="good-center">
                     <ol class="clear">
@@ -70,52 +69,56 @@ $(function() {
                     <!-- 商品数量 -->
                     <div class="goods-num">
                         <label>数量</label>
-                        <a href="#" title="减少">-</a>
-                        <input type="text" value="1" max="${response.num}" id="num">
-                        <a href="#" title="增加" class="add">+</a>
+                      
+                        <input type="number" value="1" min="1" max="${response.num}" id="num"style="width:200px;">
                     </div>
         
                     <div class="goods-btn">
                         <a href="#" class="goods-btn-first">立即购买</a>
-                        <a href="#" class="goods-btn-second">加入购物车</a>
+                        <a href="../html/shop.html" class="goods-btn-second" id="add" >加入购物车</a>
                     </div>
                 </div>
             </section>
        
                 `;
+            // console.log($('.good-wrapper').append(template).find('#add'))
             $('.good-wrapper').append(template)
+                .find('#add').on('click', function() {
+                    addShopCar(response.id, response.price, $('#num').val());
+                    // console.log($('#num').val())
+                });
         }
     });
 
-    // function addShopCar(id, price, num) {
-    //     var shop = cookie.get('shop'); //从cookie获取shop
-    //     var product = {
-    //         "id": id,
-    //         "price": price,
-    //         "num": num
-    //     };
+    function addShopCar(id, price, num) {
+        var shop = cookie.get('shop'); //从cookie获取shop
+        var product = {
+            "id": id,
+            "price": price,
+            "num": num
+        };
 
-    //     if (shop) {
-    //         shop = JSON.parse(shop); // cookie中如果有数据 这个数据是json字符串 转成对象
+        if (shop) {
+            shop = JSON.parse(shop); // cookie中如果有数据 这个数据是json字符串 转成对象
 
-    //         if (shop.some(elm => elm.id == id)) {
-    //             shop.forEach(function(elm, i) {
-    //                 elm.id == id ? elm.num = num : null;
-    //             });
-    //         } else {
-    //             shop.push(product);
-    //         }
-    //         cookie.set('shop', JSON.stringify(shop), 1);
-    //     } else {
-    //         shop = [];
-    //         shop.push(product);
-    //         cookie.set('shop', JSON.stringify(shop), 1);
-    //     }
-
-
+            if (shop.some(elm => elm.id == id)) {
+                shop.forEach(function(elm, i) {
+                    elm.id == id ? elm.num = num : null;
+                });
+            } else {
+                shop.push(product);
+            }
+            cookie.set('shop', JSON.stringify(shop), 1);
+        } else {
+            shop = [];
+            shop.push(product);
+            cookie.set('shop', JSON.stringify(shop), 1);
+        }
 
 
-    // }
+
+
+    }
 
 
 
