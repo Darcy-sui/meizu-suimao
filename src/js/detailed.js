@@ -1,5 +1,6 @@
 // 购物车二级导航
 $(function() {
+
     $('#meizu-header-cart').hover(function() {
         $('.meizu-header-cart-dl').show()
     }, function() {

@@ -55,8 +55,8 @@ $(function() {
     function check() {
         var pass = $('input[data-pass="true"]');
         if (pass.length == 1) {
-            console.log($('.form-btn').remove('disabled'))
-            $('.form-btn').remove('disabled');
+            console.log($('.form-btn>input'))
+            $('.form-btn>input').removeAttr('disabled');
         }
     }
 
