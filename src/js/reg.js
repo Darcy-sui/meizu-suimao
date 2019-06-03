@@ -55,8 +55,31 @@ $(function() {
     function check() {
         var pass = $('input[data-pass="true"]');
         if (pass.length == 1) {
-            console.log($('.form-btn>input'))
-            $('.form-btn>input').removeAttr('disabled');
+            // $('.form-btn>input').removeAttr('disabled');
+            $.ajax({
+                type: "get",
+                url: "../lib/login.php",
+
+                data: {
+                    'usersname': username.val(),
+                    'password': password.val()
+
+                },
+                success: function(data) {
+                    console.log(data)
+                    if (data == 1) {
+                        $.cookie('usersname', usersname.val());
+                        $.cookie('password', password.val());
+                        window.location.href = "../html/index.html"
+                    } else {
+                        $('form p')[1].html('账号密码输入错误')
+                    }
+                }
+            });
+        } else {
+            $('form p')[1].html('格式错误请从新输入')
+                // $('form p')[1].html('格式错误请从新输入');
+
         }
     }
 
